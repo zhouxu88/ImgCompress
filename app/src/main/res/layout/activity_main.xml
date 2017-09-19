@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.zx.lunbanpress.MainActivity">
+
+    <Button
+        android:id="@+id/open_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开相册（质量压缩）" />
+
+    <Button
+        android:id="@+id/open_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开相册（按比例压缩）" />
+
+    <Button
+        android:id="@+id/open_btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开相册（鲁班压缩）" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+
+</LinearLayout>
